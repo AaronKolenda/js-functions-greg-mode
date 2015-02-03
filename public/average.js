@@ -3,7 +3,11 @@
   It should return the sum of the members of the array.
 */
 function sum (array) {
-  
+	var total = 0;
+	for (i=0; i < array.length; i++) {
+		total = total + array[i];
+	}
+	return total;
 }
 
 /*
@@ -11,5 +15,6 @@ function sum (array) {
   It should return the average of the members of the array.
 */
 function average (array) {
-
+	a = (sum(array)) / (array.length);
+	return a;
 }
