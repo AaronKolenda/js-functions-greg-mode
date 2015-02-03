@@ -6,14 +6,9 @@
 var reverseWord = function(word) {
 
 var newWord = [];
-var temp = [];
 
 for (i=0; i<word.length; i++) {
-		temp[i] = word[i];
-	}
-
-for (i=0; i<temp.length; i++) {
-		newWord[temp.length-i] = temp[i];
+		newWord[word.length-i] = word[i];
 	}
 
 	return newWord.join("");
