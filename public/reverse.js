@@ -23,7 +23,35 @@ for (i=0; i<word.length; i++) {
   - Return a string that contains each reversed word, in order
 */
 var reverseSentence = function(sentence) {
+	var sentenceArray = [];
+	sentenceArray = sentence.split(" ");
+		for (i=0; i < sentenceArray.length; i++) {
+			var tempArr = [];
+			var temp = [];
+			var word;
+
+			var temp = sentenceArray.splice(i);
+			word = temp.join(" ");
+			tempArr[i] = reverseWord(word);
+			
+		}
+		return tempArr.join(" ");
 
 }
+
+	//this only reverses the 
+/*var reverseSentence = function(sentence) {
+	var sentenceArray = [];
+	sentenceArray = sentence.split(" ");
+		for (i=0; i < sentenceArray.length; i++) {
+			
+
+			sentenceArray[i] = reverseWord(sentenceArray[i]);
+			
+		}
+		return sentenceArray;
+
+}*/
+
 
 
