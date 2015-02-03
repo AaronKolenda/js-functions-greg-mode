@@ -15,6 +15,11 @@ function sum (array) {
   It should return the average of the members of the array.
 */
 function average (array) {
+	if (sum(array) === 0) {
+	return 0;
+	}
+	else {
 	a = (sum(array)) / (array.length);
 	return a;
+	}
 }
